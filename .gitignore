@@ -7,4 +7,4 @@
 .uwsgi_params
 .env
 ..env.swp
-venv
+venv/
