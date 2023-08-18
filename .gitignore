@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+*.xml
+*.iml
+.RememberApp.sock
+.RememberAppins_uwsgi.ini
+.uwsgi_params
+.env
+..env.swp
