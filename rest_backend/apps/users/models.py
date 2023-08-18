@@ -13,15 +13,6 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     company = models.CharField(verbose_name='Компания', max_length=40, blank=True)
     position = models.CharField(verbose_name='Должность', max_length=40, blank=True)
-    username_validator = UnicodeUsernameValidator()
-    username = models.CharField(unique=True,
-        max_length=150,
-        help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.',
-        validators=[username_validator],
-        error_messages={
-            'unique': "A user with that username already exists.",
-        },
-    )
     is_active = models.BooleanField(
         default=False,
         help_text=(
