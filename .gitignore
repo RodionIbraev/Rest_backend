@@ -6,4 +6,4 @@
 .RememberAppins_uwsgi.ini
 .uwsgi_params
 .env
-
+venv
