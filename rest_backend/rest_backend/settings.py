@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
-    
+
     'apps.users',
 ]
 
@@ -83,16 +83,16 @@ WSGI_APPLICATION = 'rest_backend.wsgi.application'
 
 DATABASES = {'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': env('DATABASES_NAME'),
-    'USER': env('DATABASES_USER'),
-    'PASSWORD': env('DATABASES_PASSWORD'),
-    'HOST': env('DATABASES_HOST'),
-    'PORT': env('DATABASES_PORT'),
+    'NAME': env('DB_NAME'),
+    'USER': env('PG_USER'),
+    'PASSWORD': env('PG_USER_PASSWORD'),
+    'HOST': env('IP'),
+    'PORT': env('PG_PORT'),
     'TEST': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('TEST_DATABASES_NAME'),
-        'USER': env('TEST_DATABASES_USER'),
-        'PASSWORD': env('TEST_DATABASES_PASSWORD'),
+        'NAME': env('TEST_DB_NAME'),
+        'USER': env('TEST_PG_USER'),
+        'PASSWORD': env('TEST_PG_USER_PASSWORD'),
     }
 
 }
